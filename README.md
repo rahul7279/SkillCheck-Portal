@@ -42,3 +42,14 @@ Since this project uses no external libraries or backend, running it is incredib
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-username/SkillCheck-Portal.git](https://github.com/your-username/SkillCheck-Portal.git)
+
+📜 Rules Followed
+This project was built adhering to strict hackathon guidelines:
+
+No Frameworks: 100% Vanilla JS, HTML, and CSS.
+
+No Backend/Database: Utilized Client-Side Storage.
+
+No External AI Tools: Built a custom rule-based JS algorithm for performance insights.
+
+Built with ❤️ by [Rahul Patel]
