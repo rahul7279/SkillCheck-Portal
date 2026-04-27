@@ -6,7 +6,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-🔗 **[Live Demo: Play the Quiz Here](YAHAN_APNA_LIVE_LINK_DAAL_DENA)**
+🔗 **[Live Demo: Play the Quiz Here](https://quizeswize.netlify.app/)**
 
 ---
 
@@ -26,7 +26,12 @@ SkillCheck is a lightweight, frontend-only assessment tool designed for hackatho
 
 ## 📸 Screenshots
 
-*(Yahan apne project ke 1-2 ache screenshots drag and drop kar dena jab edit kar rahe ho)*
+<img width="1616" height="820" alt="Screenshot 2026-04-27 154914" src="https://github.com/user-attachments/assets/21cfd66a-0efe-43aa-a00a-8a204ad6aece" />
+<img width="1042" height="695" alt="Screenshot 2026-04-27 154930" src="https://github.com/user-attachments/assets/ca42600b-a74e-42cb-ab08-d383100bd8b8" />
+<img width="1224" height="866" alt="Screenshot 2026-04-27 154946" src="https://github.com/user-attachments/assets/46fd33bb-3617-47be-a790-d288051de636" />
+
+
+
 
 ---
 
