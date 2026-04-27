@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillCheck Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="screen-home" class="container">
+    <div class="glass-card">
+      <h1>🚀 SkillCheck Portal</h1>
+      <p>Select your domain and test your knowledge.</p>
+      
+      <p class="slogan">“This platform promotes fair self-evaluation and digital exam discipline.”</p>
+      
+      <div class="input-group">
+        <label>Candidate Name</label>
+        <input type="text" id="username" placeholder="Ex: Rahul Kumar" autocomplete="off">
+        <p id="error-msg" class="error hidden">Please enter a valid name!</p>
+      </div>
+
+      <button class="btn-primary" onclick="startApp()">Enter Portal</button>
+    </div>
+  </section>
+
+  <section id="screen-subjects" class="container hidden">
+    <div class="header-row">
+      <h2>Select Assessment</h2>
+      <div class="user-info">
+        <span id="user-display">User: Guest</span>
+        <button class="btn-link" onclick="logout()">Change User</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card" onclick="checkHistory('aptitude')">
+        <div class="icon">🧠</div>
+        <h3>General Aptitude</h3>
+        <p>Logic & Reasoning</p>
+        <small>10 Questions</small>
+      </div>
+      <div class="card" onclick="checkHistory('web')">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>HTML, CSS & JS Basics</p>
+        <small>10 Questions</small>
+      </div>
+      <div class="card" onclick="checkHistory('computer')">
+        <div class="icon">🖥️</div>
+        <h3>General Computer</h3>
+        <p>Hardware & Basics</p>
+        <small>5 Questions</small>
+      </div>
+      <div class="card" onclick="checkHistory('mental')">
+        <div class="icon">🧘</div>
+        <h3>Mental Wellness</h3>
+        <p>Stress & Focus Check</p>
+        <small>Self Assessment</small>
+      </div>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center;">
+        <button class="btn-accent" onclick="generateAnalysis()">📊 Smart Performance Analysis (Rule-based)</button>
+    </div>
+  </section>
+
+  <section id="screen-quiz" class="container hidden">
+    <div class="quiz-header">
+      <div class="timer-box" id="timer">02:00</div>
+      <div class="progress-box">Q: <span id="current-q">1</span>/<span id="total-q">10</span></div>
+    </div>
+
+    <div class="question-area">
+      <div id="palette" class="palette"></div>
+      <h3 id="question-text">Question goes here...</h3>
+      <div id="options-container" class="options-list"></div>
+    </div>
+
+    <div class="footer-btns">
+      <div class="nav-btns">
+        <button class="btn-sec" id="prevBtn" onclick="changeQ(-1)">Previous</button>
+        <button class="btn-primary" id="nextBtn" onclick="changeQ(1)">Next</button>
+      </div>
+      <div class="action-btns">
+        <button class="btn-danger hidden" id="submitBtn" onclick="submitQuiz()">Submit Test</button>
+        <button class="btn-sec hidden" id="reviewBackBtn" onclick="finishReview()">Back to Result</button>
+      </div>
+    </div>
+    <div class="hint-text">Tip: Use Left/Right Arrow keys to navigate</div>
+  </section>
+
+  <section id="screen-result" class="container hidden">
+    <div class="glass-card result-card">
+      
+      <div class="result-header">
+        <button class="btn-icon" onclick="goHome()">⬅ Dashboard</button>
+        <button class="btn-icon btn-exit" onclick="logout()">Exit ✖</button>
+      </div>
+
+      <h2>🏆 Assessment Report</h2>
+      <p id="result-greeting">Great Job!</p>
+      
+      <div class="score-circle">
+        <div class="inner-circle">
+            <span id="score-text">0%</span>
+            <small>Accuracy</small>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+            <small>Attempted</small>
+            <b id="stat-attempt">0</b>
+        </div>
+        <div class="stat-box">
+            <small>Correct</small>
+            <b id="stat-correct">0</b>
+        </div>
+        <div class="stat-box">
+            <small>Cutoff (Min)</small>
+            <b style="color:orange">40%</b>
+        </div>
+        <div class="stat-box">
+            <small>Percentile</small>
+            <b id="stat-percentile" style="color:var(--accent)">0%</b>
+        </div>
+      </div>
+
+      <p class="slogan small-slogan">“This platform promotes fair self-evaluation and digital exam discipline.”</p>
+
+      <div class="btn-group">
+        <button class="btn-sec" onclick="reviewQuiz()">Review Answers</button>
+        <button class="btn-sec" onclick="retakeQuiz()">Retake</button>
+        <button class="btn-sec" onclick="window.print()">🖨️ Print</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="analysis-modal" class="modal hidden">
+    <div class="glass-card modal-content">
+        <h2>📊 Smart Performance Analysis</h2>
+        <p style="text-align:center; font-size:0.9rem; opacity:0.7; margin-top:-15px; margin-bottom:15px;">(Rule-based Evaluation)</p>
+        <div id="analysis-body"></div>
+        <button class="btn-primary" style="margin-top:15px; width:100%" onclick="closeAnalysis()">Close Report</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
