@@ -1,4 +1,13 @@
-# 🚀 SkillCheck Portal
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,00c6ff,0072ff&height=200&section=header&text=SKILLCHECK%20PORTAL&fontSize=70&fontColor=ffffff&fontAlignY=35&animation=twinkle" width="100%" alt="SkillCheck Banner" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/Focus-Skill%20Assessment-brightgreen" />
+  <img src="https://img.shields.io/badge/Security-Protected-informational" />
+  <img src="https://img.shields.io/badge/PHP-Ready-777bb4.svg" />
+</p>
 
 **An Intelligent & Secure Assessment Platform** built entirely with Vanilla JavaScript, HTML5, and CSS3. 
 
