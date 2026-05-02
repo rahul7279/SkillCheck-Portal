@@ -9,7 +9,8 @@
   <img src="https://img.shields.io/badge/PHP-Ready-777bb4.svg" />
 </p>
 
-**An Intelligent & Secure Assessment Platform** built entirely with Vanilla JavaScript, HTML5, and CSS3. 
+## 🎯 Elevate Your Potential
+**SkillCheck-Portal** is a robust, user-centric platform designed to bridge the gap between learning and evaluation. Whether you are conducting corporate assessments or personal skill tracking, this portal provides a seamless, distraction-free environment for testing and growth. 
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
